@@ -7,4 +7,6 @@ npx playwright test --headed ./aqmApplication/qeeri1.spec.js
 
 npx playwright test --reporter=json ./aqmApplication/qeeri.spec.js
 
-npx playwright test --headed tests
+\* this is the command to run the test case *\    npx playwright test --headed tests 
+
+\*to generate a script*\ npx playwright codegen -o tests/file name with path.spec.js
