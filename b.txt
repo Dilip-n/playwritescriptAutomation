@@ -1,0 +1,10 @@
+npx playwright test --reporter=html 
+npx node-static playwright-report
+npx playwright test  --reporter=html --timeout 60000
+npx playwright show-report
+npx playwright codegen -o tests/aqmApplication/qeeri1.spec.js http://35.206.94.22:7006
+npx playwright test --headed ./aqmApplication/qeeri1.spec.js
+
+npx playwright test --reporter=json ./aqmApplication/qeeri.spec.js
+
+npx playwright test --headed tests
